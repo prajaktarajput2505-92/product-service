@@ -11,6 +11,12 @@ import lombok.Data;
 @Data
 @Entity
 public class Product {
+    public Product(long id, String name, String description, double price) {
+        this.id = id;
+        this.name = name;
+        Description = description;
+        this.price = price;
+    }
 
     @Id
     @Min(value = 1, message = "ID must be greater than 0")
